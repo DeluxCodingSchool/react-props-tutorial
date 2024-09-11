@@ -1,0 +1,12 @@
+.interest-card {
+  padding: 20px;
+  border: 1px solid red;
+  /* width: fit-content; */
+}
+.interest-cards-container {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: center;
+  border: 1px solid red;
+  column-gap: 30px;
+}
