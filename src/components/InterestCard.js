@@ -5,6 +5,7 @@ export const InterestCard = (props) => {
       <img src={props.image} alt="" />
       <h4>{props.name}</h4>
       <p>{props.description}</p>
+      <p>{props.price}</p>
     </div>
   );
 };

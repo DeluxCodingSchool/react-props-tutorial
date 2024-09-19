@@ -10,3 +10,32 @@
   border: 1px solid red;
   column-gap: 30px;
 }
+.dot {
+  border-width: 5px;
+  border-style: solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+.dot-1 {
+  border-color: red;
+}
+.dot-2 {
+  border-color: blue;
+}
+.dot-3 {
+  border-color: green;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.main-container{
+  width: fit-content;
+}
+.items-center{
+  align-items: center;
+}

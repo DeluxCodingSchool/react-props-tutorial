@@ -2,6 +2,33 @@ import { InterestCard } from "../components/InterestCard";
 import Navbar from "../components/Navbar";
 
 export const Home = () => {
+  const cardData = [
+    {
+      foodname: "Fast Food",
+      image: "/images/f1.svg",
+      description: "All sorrows are less with bread.",
+      price: 5000,
+    },
+    {
+      foodname: "Vegetables & Fruits",
+      image: "/images/f2.svg",
+      description: "May not want it but good for you.",
+      price: 6000,
+    },
+    {
+      foodname: "Drinks & Cocktails",
+      image: "/images/f_3.svg",
+      description: "I feel sad for those who don't drink.",
+      price: 8000,
+    },
+    {
+      foodname: "Resturants",
+      image: "/images/f4.svg",
+      description: "All sorrows are less with bread.",
+      price: 2000,
+    },
+  ];
+
   return (
     <>
       <div>
@@ -9,26 +36,14 @@ export const Home = () => {
         <Navbar />
         <h1>Home Page</h1>
         <div className="interest-cards-container">
-          <InterestCard
-            name="Fast Food"
-            image="/images/f1.svg"
-            description="All sorrows are less with bread."
-          />
-          <InterestCard
-            name="Vegetables & Fruits"
-            image="/images/f2.svg"
-            description="May not want it but good for you."
-          />
-          <InterestCard
-            name="Drinks & Cocktails"
-            image="/images/f_3.svg"
-            description="I feel sad for those who don't drink."
-          />
-          <InterestCard
-            name="Resturants"
-            image="/images/f4.svg"
-            description="All sorrows are less with bread."
-          />
+          {cardData.map((card) => (
+            <InterestCard
+              image={card.image}
+              name={card.foodname}
+              description={card.description}
+              price={card.price}
+            />
+          ))}
         </div>
       </div>
     </>
